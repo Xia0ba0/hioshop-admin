@@ -14,7 +14,7 @@
     "pack": "npm run pack:main && npm run pack:renderer",
     "pack:main": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.main.config.js",
     "pack:renderer": "cross-env NODE_ENV=production webpack --progress --colors --config .electron-vue/webpack.renderer.config.js",
-    "postinstall": ""
+    "postinstall": "patch-package"
   },
   "build": {
     "productName": "hioshop-admin",
@@ -61,6 +61,7 @@
     "jsbarcode": "^3.11.0",
     "lrz": "^4.9.40",
     "moment": "^2.25.3",
+    "patch-package": "^8.0.0",
     "summernote": "^0.8.12",
     "vue": "2.5.16",
     "vue-axios": "^2.1.5",
