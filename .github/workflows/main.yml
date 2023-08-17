@@ -17,6 +17,8 @@ jobs:
         run: npm install
       - name: build-dist
         run: npm run build:web
+      - name: gen-file
+        run: echo -e "\n\n" >> dist/web/static/css/wap.css
       - name: release
         uses: softprops/action-gh-release@v1
         if: startsWith(github.ref, 'refs/tags/')
