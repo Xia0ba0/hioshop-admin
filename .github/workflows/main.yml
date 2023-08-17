@@ -22,7 +22,7 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         with:
           body-path: README.md
-          files: dist/web/**/*
+          files: dist/web/
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN }}
         
