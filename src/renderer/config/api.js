@@ -1,6 +1,7 @@
 // const rootUrl = 'http://www.hiolabs.com:8360/admin/';
 const rootUrl = 'https://admin.diautumn.com/admin/';
 
+
 const api = {
     rootUrl : rootUrl,
     // express: {
